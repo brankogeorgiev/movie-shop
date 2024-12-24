@@ -10,6 +10,7 @@ def create_movie(db: Session, schema: schemas.MovieSchema):
     db.refresh(movie)
     return movie
 
+
 def read_movie(db: Session, movie_id: int):
     movie = db.query(models.Movie).filter(models.Movie.id == movie_id).first()
     if not movie:

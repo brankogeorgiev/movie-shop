@@ -5,12 +5,6 @@ from sqlalchemy.orm import sessionmaker
 
 load_dotenv()
 
-# Debugging: print out the environment variables
-print(f"POSTGRES_USER: {os.getenv('POSTGRES_USER')}")
-print(f"POSTGRES_PASSWORD: {os.getenv('POSTGRES_PASSWORD')}")
-print(f"POSTGRES_DB: {os.getenv('POSTGRES_DB')}")
-print(f"SQLALCHEMY_DATABASE_URL: {os.getenv('SQLALCHEMY_DATABASE_URL')}")
-
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 POSTGRES_DB = os.getenv("POSTGRES_DB")
